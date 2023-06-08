@@ -1,0 +1,51 @@
+header {
+width: 100%;
+}
+
+header .inner {
+	width: 1180px;
+	height: 120px;
+	margin: 0px auto;
+	position: relative;
+}
+
+header .inner h1 {
+    position: absolute;
+	bottom: 10px;
+    background-color: aqua; /* 헤더 제목 구역 임시 확인용 */
+    width: 100%; 
+}
+
+header .inner h1 > a {
+    color: black;
+    text-align: left;
+}
+
+header .inner h1 > a:link {
+    color: black;
+    text-align: left;
+}
+
+header .inner h1 > a:visited {
+    color: black;
+    text-align: left;
+}
+
+header .inner a:link {
+    text-decoration: none;
+    color: gray;
+}
+
+header .inner a:visited {
+    text-decoration: none;
+    color: gray;
+}
+
+header .inner .uputil ul {
+    float: left;
+}
+
+header .inner ul > li {
+
+    float: left;
+}
