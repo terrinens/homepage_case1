@@ -31,12 +31,12 @@ header .inner h1 > a:visited {
     text-align: left;
 }
 
-header .inner a:link {
+header .inner, .list a:link {
     text-decoration: none;
     color: gray;
 }
 
-header .inner a:visited {
+header .inner, .list a:visited {
     text-decoration: none;
     color: gray;
 }
@@ -49,3 +49,25 @@ header .inner ul > li {
 
     float: left;
 }
+
+header .list ul {
+    float: left;
+}
+
+header .list ul > li {
+    float: left;
+    font-size: 20px;
+}
+/*
+header .list a {
+    color: black;
+}
+
+header .list a:link {
+    color: black;
+}
+
+header .list a:visited {
+    color: black;
+}
+*/
