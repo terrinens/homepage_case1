@@ -1,73 +1,85 @@
-header {
-width: 100%;
+.clear {
+    clear:both;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }
 
-header .inner {
-	width: 1180px;
-	height: 120px;
-	margin: 0px auto;
-	position: relative;
+header div.top {
+    margin-right: 30px;
+    border: 1px dotted red;
+    padding: 30px;
+    float: left;
 }
 
-header .inner h1 {
-    position: absolute;
-	bottom: 10px;
-    background-color: aqua; /* 헤더 제목 구역 임시 확인용 */
-    width: 100%; 
+header h2.top {
+    border: 1px dotted red;
+    float: left;
 }
 
-header .inner h1 > a {
+header .upset div { /* 역순이니 div 넣을시 참고 */
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border: 1px dotted red;
+    float: right;
+}
+
+header a, a:link, a:visited {
     color: black;
-    text-align: left;
-}
-
-header .inner h1 > a:link {
-    color: black;
-    text-align: left;
-}
-
-header .inner h1 > a:visited {
-    color: black;
-    text-align: left;
-}
-
-header .inner, .list a:link {
     text-decoration: none;
-    color: gray;
 }
 
-header .inner, .list a:visited {
-    text-decoration: none;
-    color: gray;
-}
-
-header .inner .uputil ul {
+header .main_list div{
+    margin-top: 15px;
+    margin-right: 20px;
+    border: 1px dotted red;
+    padding: 15px;
     float: left;
 }
 
-header .inner ul > li {
+event div.main_box { /* 옆으로 이동하면서 보여줄 예정 */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px dotted red;
 
-    float: left;
-}
-
-header .list ul {
-    float: left;
-}
-
-header .list ul > li {
-    float: left;
-    font-size: 20px;
-}
-/*
-header .list a {
-    color: black;
+    width: 100%;
+    height: 200px;
 }
 
-header .list a:link {
-    color: black;
+rec div.main_box {
+    margin-top: 10px;
+    border: 1px dotted red;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
 }
 
-header .list a:visited {
-    color: black;
+rec .main_box_in div {
+    margin: 10px;
+    border: 1px dotted red;
+    width: 400px;
+    height: 85%;
+    text-align: center;
+    display: inline-block;
 }
-*/
+
+rec .main_box_in div:hover { 
+    /* 마우스 올릴시 장바구니 담기, 상품 자세히보기 기능 추가할것 */
+    background-color: gray;
+    opacity: 0.7;
+}
+
+rank div.main_box { 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px dotted red;
+
+    width: 100%;
+    height: 400px;
+}
+
+

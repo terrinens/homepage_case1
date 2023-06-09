@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="chorm">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인 홈페이지</title>
-    <link rel="stylesheet" href="../css/header.css">
+    <title>홈페이지</title>
+    <link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
     <header>
-        <div class="inner">
-            <ul class="uputil">
-                <li> <a href="#"> 로그인 </a></li>
-                <li> <a href="#"> 장바구니 </a></li>
-                <li> <a href="#"> 고객센터 </a></li>
-            </ul>
+        <upset class="upset">
+            <div> <a href="#">고객센터 </a></div>
+            <div> <a href="#">회원정보 </a></div>
+            <div> <a href="#">장바구니 </a></div>
+            <div> <a href="#">로그인 </a></div>
+        </upset>
 
-            <br>
+        <div class="clear"></div>
 
-            <h1>
-                <a href="main_home.html" id="a_header1"> noname몰 </a>
-            </h1>
-
-        </div>
-        <div class="list">
-            <ul>
-                <li> <a href="/html/list1.html"> 상품목록 1 </a></li>
-                <li> <a href="/html/list2.html"> 상품목록 1 </a></li>
-                <li> <a href="/html/list3.html"> 상품목록 1 </a></li>
-            </ul>
+        <div>
+            <div class="top"><a href="index.html"> 홈페이지 로고 </a></div>
+            <mainlist class="main_list">
+                <div> <a href="html/list1.html"> 상품 리스트1 </a></div>
+                <div> <a href="html/list2.html"> 상품 리스트2 </a></div>
+                <div> <a href="html/list3.html"> 상품 리스트3 </a></div>
+                <div> <a href="html/list4.html"> 상품 리스트4 </a></div>
+                <div> <a href="html/list5.html"> 상품 리스트5 </a></div>
+            </mainlist>
         </div>
 
+        <div class="clear"> </div>
     </header>
+
+    <event>
+        <div class="main_box">
+            이벤트 리스트
+        </div>
+    </event>
+
+    <rec>
+        <div class="main_box">
+            추천상품목록
+
+            <div class="clear"></div>
+
+            <rec_list class="main_box_in">
+                <div> </div>
+                <div> </div>
+                <div> </div>
+                <div> </div>
+            </rec_list>
+        </div>
+    </rec>
+
+    <rank>
+        <div class="main_box">
+
+            <rank_list>
+                <div>
+                </div>
+            </rank_list>
+        </div>
+    </rank>
 </body>
 
 </html>
