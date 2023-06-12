@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div,li, header {
+    border: 1px dotted red;
+}
+
 .clear {
     clear:both;
     margin: 0px;
@@ -7,20 +16,17 @@
 
 header div.top {
     margin-right: 30px;
-    border: 1px dotted red;
     padding: 30px;
     float: left;
 }
 
 header h2.top {
-    border: 1px dotted red;
     float: left;
 }
 
 header .upset div { /* 역순이니 div 넣을시 참고 */
     margin-bottom: 20px;
     margin-right: 5px;
-    border: 1px dotted red;
     float: right;
 }
 
@@ -29,18 +35,42 @@ header a, a:link, a:visited {
     text-decoration: none;
 }
 
-header .main_list div{
-    margin-top: 15px;
-    margin-right: 20px;
-    border: 1px dotted red;
-    padding: 15px;
+header .main_list li {
+    list-style: none;
     float: left;
+    text-align: center;
+
+    padding-top: 30px;
+}
+
+header .main_list > li{
+    width: 15%;
+    height: 70px;
+
+
+    background-color: white;
+}
+
+header .main_list li:hover .sub_list {
+   visibility: visible;
+   background-color: white;
+}
+
+header .sub_list{
+    visibility: hidden;
+    position: relative;
+    top: -25px;
+    background-color: white;
+}
+
+header .sub_list li{
+    line-height: 40px;
+    width: 100%;
 }
 
 event div.main_box { /* 옆으로 이동하면서 보여줄 예정 */
     margin-top: 15px;
     margin-bottom: 15px;
-    border: 1px dotted red;
 
     width: 100%;
     height: 200px;
@@ -48,7 +78,6 @@ event div.main_box { /* 옆으로 이동하면서 보여줄 예정 */
 
 rec div.main_box {
     margin-top: 10px;
-    border: 1px dotted red;
     width: 100%;
     height: 400px;
     overflow: auto;
@@ -60,7 +89,6 @@ rec div.main_box {
 
 rec .main_box_in div {
     margin: 10px;
-    border: 1px dotted red;
     width: 400px;
     height: 85%;
     text-align: center;
@@ -76,7 +104,6 @@ rec .main_box_in div:hover {
 rank div.main_box { 
     margin-top: 15px;
     margin-bottom: 15px;
-    border: 1px dotted red;
 
     width: 100%;
     height: 400px;
