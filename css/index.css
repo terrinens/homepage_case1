@@ -225,10 +225,15 @@ main section.featitems article div.items_desc {
     align-items: center;
 
 
-    overflow: auto;
+    overflow: overlay;
     white-space: normal;
 
     border: 1px solid blue;
+}
+
+main section.featitems article div.items_desc::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 42%, 0.49);
+    border-radius: 100px;
 }
 
 main section.featitems article div.items_price {
