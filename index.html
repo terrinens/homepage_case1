@@ -12,14 +12,12 @@
 <body>
     <header class="c12 c_m_12">
 
-        <div class="c12"></div>
-
         <div class="c2 c_m_2" id="logo">
             <!-- 사진: <a href="https://unsplash.com/ko/s/%EC%82%AC%EC%A7%84/%EC%B9%98%EC%A6%88?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>의<a href="https://unsplash.com/@onderortel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Önder Örtel</a> -->
             <a href="./index.html"> <img src="./img/temporary_logo.jpg" alt=""> </a>
         </div>
 
-        <nav class="c4 c_m_10" id="top_menu">
+        <nav class="c12 c_m_10" id="top_menu">
             <ul>
                 <li><a href="#"> 로그인 </a></li>
 
@@ -52,17 +50,18 @@
         <section class="c12 c_m_12" id="event_banner_box">
             <img src="./img/pngwing.com.png" id="b_frev">
 
-            <a href="#"><img src=""></a>
+            <img src="" id="banner_img">
 
             <img src="./img/pngwing.com.png" id="b_next">
             <script src="./js/index/event_banner_silde.js"></script>
         </section>
         <!-- 추천상품 -->
+        <div class="c12 feat_info">추천 상품</div>
         <section class="c12" id="feat_items">
+            <!-- a 태그로 article 안에 요소를 감싸니 박스들이 작동되지 않았다. -->
             <button id="frev">
                 < </button>
                     <article class="feat_items_list">
-
                         <img src="" alt="">
                         <div class="items_name">상품이름</div>
                         <div class="items_cook">요리 태그</div>
@@ -89,28 +88,70 @@
                         <div class="items_cook">요리 태그</div>
                         <div class="items_price">가격</div>
                     </article>
-
-                    <!-- <article class="feat_items_list">
-                사진: <a href="https://unsplash.com/ko/s/%EC%82%AC%EC%A7%84/%EC%B9%98%EC%A6%88?license=free&utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>의<a href="https://unsplash.com/@dierken?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike Dierken</a>
-                <img src="./img/temporary_feat_items05.jpg" alt="">
-                <div class="items_name">상품이름</div>
-                <div class="items_cook">#샐러드, #스튜, #안주, #아이간식, #샌드위치</div>
-                <div class="items_price">가격</div>
-            </article> -->
                     <button id="next">></button>
         </section>
-        <script src="./js/index/feat_items_silde.js"></script>
+
+        <div class="c12 feat_info">인기상품</div>
 
         <!-- 인기상품 -->
-        <section id="hotitems">
 
+        <!-- 임시로 인기상품을 복사해서 붙여 넣었으니 나중에 수정할것 -->
+        <section class="c12" id="hotitems">
+            <button id="hot_frev">
+                < </button>
+                    <article class="hotitems_list">
+                        <img src="" alt="">
+                        <div class="hotitems_items_name">상품이름</div>
+                        <div class="hotitems_items_cook">요리 태그</div>
+                        <div class="hotitems_items_price">가격</div>
+                    </article>
+
+                    <article class="hotitems_list">
+                        <img src="" alt="">
+                        <div class="hotitems_items_name">상품이름</div>
+                        <div class="hotitems_items_cook">요리 태그</div>
+                        <div class="hotitems_items_price">가격</div>
+                    </article>
+
+                    <article class="hotitems_list">
+                        <img src="" alt="">
+                        <div class="hotitems_items_name">상품이름</div>
+                        <div class="hotitems_items_cook">요리 태그</div>
+                        <div class="hotitems_items_price">가격</div>
+                    </article>
+
+                    <article class="hotitems_list">
+                        <img src="" alt="">
+                        <div class="hotitems_items_name">상품이름</div>
+                        <div class="hotitems_items_cook">요리 태그</div>
+                        <div class="hotitems_items_price">가격</div>
+                    </article>
+                    <button id="hot_next">></button>
         </section>
+
+        <script src="./js/index/items_button.js"></script>
+        <script src="./js/index/items_button copy.js"></script>
     </main>
 
     <footer class="c12">
-        <div>
 
+        <a href="#">회사소개</a>
+        <a href="#">이용약관</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">고객샌터</a>
+
+        <hr>
+
+        <div>
+            <strong>대표번호</strong> : 000-000-0000 (업무시간 : 09:00-17:00 월~금 / <strong>점심시간</strong> : 12:00 - 13:00) 주말, 공휴일 휴무
         </div>
+        <div>
+            <strong>대표자</strong> : 홍길동 | <strong>주소</strong> : 서울특별시 서울 서울로 00길 00, 1층(서울동)
+        </div>
+        <div>
+            <strong>법인명</strong> : (주)홍길동점 | <strong>사업자등록번호</strong> : 000-000-0000
+        </div>
+        
     </footer>
 
 </body>

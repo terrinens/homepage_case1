@@ -1,11 +1,15 @@
 * { margin: 0px; padding: 0px; box-sizing: border-box;}
 
 /* 영역 확인용 */
-main, footer, section {
+/* main, footer, section {
     border: 1px dotted red;
-}
+} */
 
 /* 헤더 시작 */
+header {
+    padding-top: 0px !important;
+}
+
 header a {
     color: black;
     text-decoration: none;
@@ -18,11 +22,38 @@ header div#logo {
     align-items: center;
 }
 
+@media screen and (max-width : 1370px) {
+    header div#logo {
+        padding: 0px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    header div#logo {
+        margin-top: 0;
+    }
+ }
+
 header div#logo img {
 
     height: 140px;
-    width: 150px;
+    width: 100%;
 }
+
+@media screen and (max-width : 1370px) {
+    header div#logo img {
+        height: 182px;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    header div#logo img {
+        height: 140px;
+    }
+}
+
+
 
 @media only screen and (max-width : 932px) {
     header div#logo {
@@ -37,26 +68,25 @@ header div#logo img {
 
 /* 탑 메뉴 시작 */
 header nav#top_menu {
-    padding: 0px;
-    position: absolute;
     right: 0;
 }
 
 @media screen and (max-width : 1024px) {
     header nav#top_menu {
         position: static;
+
         min-height: 140px;
         height: 100%;
-        margin-top: 25px;
-        
+
         display: flex;
         justify-content: center;
         align-items: center;
+
+        background-color: #BDBDBD;
     }
     
     header nav#top_menu li {
         font-size: x-large;
-        display: inline-block;
         
         margin: 20px;
     }
@@ -66,18 +96,22 @@ header nav#top_menu {
     header nav#top_menu {
         position: static;
         height: 100%;
-        width: 100%;
     }
 }
 
 header nav#top_menu ul {
     list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-right: 20px;
+}
+
+header nav#top_menu li {
+    margin: 10px;
 }
 
 header nav#top_menu a {
-    margin-right: 15px;
     margin-bottom: 5px;
-    float: left;
 }
 /* 탑 메뉴 끝 */
 
@@ -90,6 +124,10 @@ header nav#main_menu {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #BDBDBD;
+
+    margin-top: 30px;
 }
 
 @media screen and (min-width : 1375px) {
@@ -128,18 +166,36 @@ header nav#main_menu a {
 /*  */
 
 /* 메인시작 */
+/* 공용 시작*/
+div.feat_info {
+    width: 100%;
+
+    font-size: x-large;
+    font-weight: bolder;
+
+    margin-top: 30px;
+    padding-left: 20px;
+
+    border-bottom: 1px solid red;
+}
+/* 공용 끝 */
 /* 메인 배너시작 */
 main section#event_banner_box {
+
+    width: 100%;
+    height: 250px;
+
+    padding: 0;
+
     position: relative;
 
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-main section#event_banner_box img{   
+main section#event_banner_box img#banner_img{   
     height: 100%;
-    max-height: 300px;
     width: 100%;
 }
 
@@ -152,12 +208,14 @@ main section#event_banner_box img{
 main section#event_banner_box #b_frev, 
 main section#event_banner_box #b_next {
     width: 2%;
-    height: 100%;
+    height: 80%;
 
     position: absolute;
-    top: 0;
+    top: 12%;
 
     opacity: 0.0;
+
+    color: aqua;
 }
 
 main section#event_banner_box #b_frev {
@@ -181,7 +239,7 @@ main section#event_banner_box:hover #b_next {
 /*  */
 /*  */
 
-/* 인기 아이템 시작 */
+/* 추천 아이템 시작 */
 main section#feat_items {
     margin-top: 15px;
     display: flex;
@@ -193,11 +251,13 @@ main section#feat_items article {
     width: 20%;
     margin: 20px;
 
-    border: 1px solid red;
-
     text-align: center;
 
     display: inline-block;
+
+    border: 1px solid gray;
+
+    box-shadow: 1px 1px 10px;
 }
 
 
@@ -256,8 +316,6 @@ main section#feat_items article div.items_name {
 
     height: 50px;
 
-    border: 1px solid blue;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,32 +333,162 @@ main section#feat_items article div.items_cook {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    border: 1px solid blue;
 }
 
 main section#feat_items article div.items_price {
     font-weight: bolder;
     font-size: large;
 
-    border: 1px solid blue;
 }
 
 main section#feat_items button {
     font-size: xx-large;
     height: 100%;
 }
-/* 인기 아이팀 끝 */
+/* 추천 아이팀 끝 */
 
+/* 인기 아이템 시작 */
+main section#hotitems {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section#hotitems article {
+    width: 20%;
+    margin: 20px;
+
+    text-align: center;
+
+    display: inline-block;
+
+    border: 1px solid gray;
+
+    box-shadow: 1px 1px 10px;
+}
+
+
+@media screen and (max-width : 1024px) {
+    main section#hotitems article {
+        width: 27%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width : 783px) {
+    main section#hotitems article {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+main section#hotitems article > img {
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width : 1024px) {
+    main section#hotitems article > img {
+        min-height: 200px;
+        max-height: 200px;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width : 932px) {
+    main section#hotitems article > img {
+        max-height: 100px;
+    }
+}
+
+@media screen and (max-width : 783px) {
+    main section#hotitems article > img {
+        max-width: 100%;
+    }
+}
+
+main section#hotitems article div {
+    text-align: center;
+}
+
+main section#hotitems article div.hotitems_items_name {
+    font-weight: bolder;
+    font-size: large;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#hotitems article div.hotitems_items_cook {
+    font-size: medium;
+
+    margin-bottom: 5px;
+
+    max-width: 100%;
+    height: 100px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#hotitems article div.hotitems_items_price {
+    font-weight: bolder;
+    font-size: large;
+
+}
+
+main section#hotitems button {
+    font-size: xx-large;
+    height: 100%;
+}
+/* 인기 아이템 끝 */
+
+/* 메인 끝 */
 /*  */
 /*  */
 /*  */
 
 /* 풋터 시작 */
 footer {
-    height: 100px;
     margin-top: 30px;
+
+    background-color: gray;
 }
+
+footer hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: antiquewhite;
+
+    padding: 10px;
+    
+    font-weight: bolder;
+}
+
+footer div {
+
+    color: aliceblue;
+    padding-left: 10px;
+    line-height: 40px;
+
+}
+
 /* 풋터 끝 */
 
 
@@ -313,25 +501,7 @@ footer {
     padding: 10px;
 }
 
-/* 600 ~ 1024 */
-@media only screen and (max-width : 1024px){
-.c_m_1 {width: 8.33%; float: left; padding: 15px;}
-.c_m_2 {width: 16.66%; float: left; padding: 15px;}
-.c_m_3 {width: 25.00%; float: left; padding: 15px;}
-/*  */
-.c_m_4 {width: 33.33%; float: left; padding: 15px;}
-.c_m_5 {width: 41.66%; float: left; padding: 15px;}
-.c_m_6 {width: 50.00%; float: left; padding: 15px;}
-/*  */
-.c_m_7 {width: 58.33%; float: left; padding: 15px;}
-.c_m_8 {width: 66.66%; float: left; padding: 15px;}
-.c_m_9 {width: 75.00%; float: left; padding: 15px;}
-/*  */
-.c_m_10 {width: 83.33%; float: left; padding: 15px;}
-.c_m_11 {width: 91.66%; float: left; padding: 15px;}
-.c_m_12 {width: 100%; float: left; padding: 15px;}
 
-}
 /* 그 이상 */
 @media only screen and (min-width : 1024px) {
  
@@ -351,3 +521,23 @@ footer {
 .c11 {width: 91.66%; float: left; padding: 15px;}
 .c12 {width: 100%; float: left; padding: 15px;}
 }
+
+/* 600 ~ 1024 */
+@media only screen and (min-width : 600px){
+    .c_m_1 {width: 8.33%; float: left; padding: 15px;}
+    .c_m_2 {width: 16.66%; float: left; padding: 15px;}
+    .c_m_3 {width: 25.00%; float: left; padding: 15px;}
+    /*  */
+    .c_m_4 {width: 33.33%; float: left; padding: 15px;}
+    .c_m_5 {width: 41.66%; float: left; padding: 15px;}
+    .c_m_6 {width: 50.00%; float: left; padding: 15px;}
+    /*  */
+    .c_m_7 {width: 58.33%; float: left; padding: 15px;}
+    .c_m_8 {width: 66.66%; float: left; padding: 15px;}
+    .c_m_9 {width: 75.00%; float: left; padding: 15px;}
+    /*  */
+    .c_m_10 {width: 83.33%; float: left; padding: 15px;}
+    .c_m_11 {width: 91.66%; float: left; padding: 15px;}
+    .c_m_12 {width: 100%; float: left; padding: 15px;}
+    
+    }

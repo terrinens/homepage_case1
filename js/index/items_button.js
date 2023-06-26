@@ -8,31 +8,37 @@ $(document).ready(function () {
             items_img: './img/feat_items/temporary_feat_items01.jpg',
             items_name: "나살치즈(Năsal)",
             items_cook: "#샐러드, 스튜, #안주, #아이간식, #샌드위치",
-            items_price: "30,000원"
+            items_price: "30,000원",
+            items_link : "#"
         },
         {
             items_img: './img/feat_items/temporary_feat_items02.jpg',
             items_name: "파르메잔 치즈(파마산)",
             items_cook: "스튜, #카르보나라, #파스타, #피자, #토핑류",
-            items_price: "53,000원"
+            items_price: "53,000원",
+            items_link : "#"
+            
         },
         {
             items_img: './img/feat_items/temporary_feat_items03.jpg',
             items_name: "에멘탈 치즈",
             items_cook: "#샌드위치, #크래커&비스킷, 토핑류",
-            items_price: "29,000원"
+            items_price: "29,000원",
+            items_link : "#"
         },
         {
             items_img: './img/feat_items/temporary_feat_items04.jpg',
             items_name: "오라 치즈 (블루치즈)",
             items_cook: "#모든와인, #샌드위치, #피자, #샐러드",
-            items_price: "30,000원"
+            items_price: "30,000원",
+            items_link : "#"
         },
         {
             items_img: './img/feat_items/temporary_feat_items05.jpg',
             items_name: "만체고 치즈",
             items_cook: "#샐러드, #아이간식, #샌드위치, #올리브절임, #젤리, #레드와인",
-            items_price: "127,000원"
+            items_price: "127,000원",
+            items_link : "#"
         },
     ];
 
@@ -179,6 +185,12 @@ $(document).ready(function () {
             $("article.feat_items_list").eq(2).children("div.items_price").text(feat_items_img[list3].items_price);
             $("article.feat_items_list").eq(3).children("div.items_price").text(feat_items_img[list4].items_price);
         }
+    });
+
+    $("article.feat_items_list").click (function () {
+        var index = $(this).index();
+        var list_link = feat_items_img[index].items_link;
+        window.location.href = list_link;
     });
 });
 
