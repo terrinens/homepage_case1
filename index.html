@@ -6,53 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지</title>
     <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/6ec8356f28.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
     <header class="c12 c_m_12">
 
-        <div class="c2 c_m_2" id="logo">
-            <!-- 사진: <a href="https://unsplash.com/ko/s/%EC%82%AC%EC%A7%84/%EC%B9%98%EC%A6%88?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>의<a href="https://unsplash.com/@onderortel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Önder Örtel</a> -->
-            <a href="./index.html"> <img src="./img/temporary_logo.jpg" alt=""> </a>
+        <!-- 정렬을 위한 빈공간 -->
+        <div class="c4"></div>
+
+        <div class="c4" id="logo">
+            <a href="./index.html"> <img src="/img/header and Public use/logo01.png" alt=""> </a>
         </div>
 
-        <nav class="c12 c_m_10" id="top_menu">
+        <nav class="c4" id="top_menu">
             <ul>
-                <li><a href="#"> 로그인 </a></li>
+                <li><a href="#" title="로그인">
+                        <img src="./img/svg/box-arrow-in-right.svg" alt="">
+                    </a></li>
 
-                <li><a href="#"> 장바구니 </a></li>
+                <li><a href="#" title="장바구니">
+                        <img src="./img/svg/cart3.svg" alt="">
+                    </a></li>
 
-                <li><a href="#"> 마이페이지 </a></li>
+                <li><a href="#" title="마이페이지">
+                        <img src="./img/svg/person-vcard.svg" alt="">
+                    </a></li>
+
+            </ul>
+        </nav>
+
+        <!-- window width 1024일시 나타나는 하단 바 -->
+        <!-- 현재 일정 크기 이하일시 아이콘들이 사라지니 터치 스크롤 구현 예정 -->
+        <nav class="c12 c_m_12" id="side_menu">
+            <button id="side_menu_toggle">
+                <div></div>
+            </button>
+            <div class="c12 c_m_12" id="side_menu_icon_box">
+                <ul>
+                    <li><a href="#">
+                            <img src="./img/svg/box-arrow-in-right.svg" alt="">
+                            <div>로그인</div>
+                        </a></li>
+
+                    <li><a href="#">
+                            <img src="./img/svg/cart3.svg" alt="">
+                            <div>장바구니</div>
+                        </a></li>
+
+                    <li><a href="#">
+                            <img src="./img/svg/house.svg" alt="">
+                            <div>홈페이지</div>
+                        </a></li>
+
+                    <li><a href="#">
+                            <img src="./img/svg/person-vcard.svg" alt="">
+                            <div>마이페이지</div>
+                        </a></li>
+
+                    <li><a href="#">
+                            <img src="./img/svg/headset.svg" alt="">
+                            <div>고객센터</div>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 짧은 js코드들은 하나의 파일로 병합 예정 -->
+        <script src="./js/index/side_menu_button.js"></script>
+
+        <nav class="c12 c_m_12" id="main_menu">
+            <ul>
+                <li><a href="#"> 치즈 </a></li>
+
+                <li><a href="#"> 요거트/유제품 </a></li>
+
+                <li><a href="#"> 와인/음료 </a></li>
+
+                <li><a href="#"> 소스/향신료 </a></li>
+
+                <li><a href="#"> 도구/장식 </a></li>
 
                 <li><a href="#"> 고객센터 </a></li>
             </ul>
         </nav>
-
-
-        <nav class="c10 c_m_12" id="main_menu">
-            <ul>
-                <li><a href="#"> 상품 리스트 1 </a></li>
-
-                <li><a href="#"> 상품 리스트 2 </a></li>
-
-                <li><a href="#"> 상품 리스트 3 </a></li>
-
-                <li><a href="#"> 상품 리스트 4 </a></li>
-
-                <li><a href="#"> 상품 리스트 5 </a></li>
-            </ul>
-        </nav>
+        <div class="c12 c_m_12"></div>
     </header>
 
     <main class="c12 c_m_12">
         <!-- 메인 배너 -->
         <section class="c12 c_m_12" id="event_banner_box">
-            <img src="./img/pngwing.com.png" id="b_frev">
+            <img src="./img/header and Public use/pngwing.com.png" id="b_frev">
 
             <img src="" id="banner_img">
 
-            <img src="./img/pngwing.com.png" id="b_next">
+            <img src="./img/header and Public use/pngwing.com.png" id="b_next">
             <script src="./js/index/event_banner_silde.js"></script>
         </section>
         <!-- 추천상품 -->
@@ -64,28 +113,28 @@
                     <article class="feat_items_list">
                         <img src="" alt="">
                         <div class="items_name">상품이름</div>
-                        <div class="items_cook">요리 태그</div>
+                        <div class="items_cook">연관 상품 태그</div>
                         <div class="items_price">가격</div>
                     </article>
 
                     <article class="feat_items_list">
                         <img src="" alt="">
                         <div class="items_name">상품이름</div>
-                        <div class="items_cook">요리 태그</div>
+                        <div class="items_cook">연관 상품 태그</div>
                         <div class="items_price">가격</div>
                     </article>
 
                     <article class="feat_items_list">
                         <img src="" alt="">
                         <div class="items_name">상품이름</div>
-                        <div class="items_cook">요리 태그</div>
+                        <div class="items_cook">연관 상품 태그</div>
                         <div class="items_price">가격</div>
                     </article>
 
                     <article class="feat_items_list">
                         <img src="" alt="">
                         <div class="items_name">상품이름</div>
-                        <div class="items_cook">요리 태그</div>
+                        <div class="items_cook">연관 상품 태그</div>
                         <div class="items_price">가격</div>
                     </article>
                     <button id="next">></button>
@@ -102,28 +151,28 @@
                     <article class="hotitems_list">
                         <img src="" alt="">
                         <div class="hotitems_items_name">상품이름</div>
-                        <div class="hotitems_items_cook">요리 태그</div>
+                        <div class="hotitems_items_cook">연관 상품 태그</div>
                         <div class="hotitems_items_price">가격</div>
                     </article>
 
                     <article class="hotitems_list">
                         <img src="" alt="">
                         <div class="hotitems_items_name">상품이름</div>
-                        <div class="hotitems_items_cook">요리 태그</div>
+                        <div class="hotitems_items_cook">연관 상품 태그</div>
                         <div class="hotitems_items_price">가격</div>
                     </article>
 
                     <article class="hotitems_list">
                         <img src="" alt="">
                         <div class="hotitems_items_name">상품이름</div>
-                        <div class="hotitems_items_cook">요리 태그</div>
+                        <div class="hotitems_items_cook">연관 상품 태그</div>
                         <div class="hotitems_items_price">가격</div>
                     </article>
 
                     <article class="hotitems_list">
                         <img src="" alt="">
                         <div class="hotitems_items_name">상품이름</div>
-                        <div class="hotitems_items_cook">요리 태그</div>
+                        <div class="hotitems_items_cook">연관 상품 태그</div>
                         <div class="hotitems_items_price">가격</div>
                     </article>
                     <button id="hot_next">></button>
@@ -143,7 +192,8 @@
         <hr>
 
         <div>
-            <strong>대표번호</strong> : 000-000-0000 (업무시간 : 09:00-17:00 월~금 / <strong>점심시간</strong> : 12:00 - 13:00) 주말, 공휴일 휴무
+            <strong>대표번호</strong> : 000-000-0000 (업무시간 : 09:00-17:00 월~금 / <strong>점심시간</strong> : 12:00 - 13:00) 주말,
+            공휴일 휴무
         </div>
         <div>
             <strong>대표자</strong> : 홍길동 | <strong>주소</strong> : 서울특별시 서울 서울로 00길 00, 1층(서울동)
@@ -151,7 +201,7 @@
         <div>
             <strong>법인명</strong> : (주)홍길동점 | <strong>사업자등록번호</strong> : 000-000-0000
         </div>
-        
+
     </footer>
 
 </body>
