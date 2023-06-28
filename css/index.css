@@ -137,6 +137,9 @@ header nav#side_menu {
     background-color: gray;
 
     display: none;
+
+    /* fixd로 인한 고정으로인해 몇몇 박스에 가려지므로 설정 */
+    z-index: 100;
 }
 
 header nav#side_menu button#side_menu_toggle {
@@ -228,16 +231,47 @@ header nav#main_menu li {
     border: 1px dotted white;
     min-width: 150px;
     min-height: 50px;
+    max-width: 100%;
+    max-height: 100%;
 
-    justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+header nav#main_menu li:hover {
+    background-color: whitesmoke;
 }
 
 header nav#main_menu a {
     float: left;
     font-size: large;
+
+    width: 100%;
+    height: 100%;
 }
 
+
+div.menu_items_more_info {
+    position: absolute;
+    top: 100%;
+
+    z-index: 99;
+    display: none;
+}
+
+header nav#main_menu li:hover div.menu_items_more_info {
+    display: inline;
+}
+
+div.menu_items_more_info li {
+    background-color: whitesmoke;
+}
+
+div.menu_items_more_info li:hover {
+    background-color: gray !important;
+    border: 1px dotted black;
+}
 
 /* 메인 메뉴 끝 */
 /* 헤더 끝 */
@@ -260,6 +294,8 @@ main section#event_banner_box {
     display: inline-flex;
     justify-content: center;
     text-align: center;
+
+    z-index: 1;
 }
 
 main section#event_banner_box img#banner_img {
@@ -327,6 +363,8 @@ main section#feat_items article {
     border: 1px solid gray;
 
     box-shadow: 1px 1px 10px;
+
+    position: relative;
 }
 
 
@@ -413,6 +451,31 @@ main section#feat_items article div.items_price {
 main section#feat_items button {
     font-size: xx-large;
     height: 100%;
+}
+
+main section#feat_items div.items_quick {
+    position: absolute;
+    top: 0;
+
+    background-color: rgba(220, 220, 220, 0.5);
+
+    min-height: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+main section#feat_items div.items_quick img {
+    width: 30%;
+    height: 30%;
+}
+
+main section#feat_items div.items_quick img:hover {
+    border: 1px dotted red;
 }
 
 /* 추천 아이팀 끝 */
