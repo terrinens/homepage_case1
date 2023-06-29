@@ -61,6 +61,20 @@ $(document).ready(function () {
             $("article.feat_items_list").eq(0).children("div.items_price").text(feat_items_img[list1].items_price);
             $("article.feat_items_list").eq(1).children("div.items_price").text(feat_items_img[list2].items_price);
 
+            $("article.hotitems_list").eq(2).hide();
+
+            $("article.hotitems_list").eq(0).children("img").attr("src", feat_items_img[list1].items_img);
+            $("article.hotitems_list").eq(1).children("img").attr("src", feat_items_img[list2].items_img);
+
+            $("article.hotitems_list").eq(0).children("div.items_name").text(feat_items_img[list1].items_name);
+            $("article.hotitems_list").eq(1).children("div.items_name").text(feat_items_img[list2].items_name);
+
+            $("article.hotitems_list").eq(0).children("div.items_cook").text(feat_items_img[list1].items_cook);
+            $("article.hotitems_list").eq(1).children("div.items_cook").text(feat_items_img[list2].items_cook);
+
+            $("article.hotitems_list").eq(0).children("div.items_price").text(feat_items_img[list1].items_price);
+            $("article.hotitems_list").eq(1).children("div.items_price").text(feat_items_img[list2].items_price);
+
         } else if (windowWidth >= 784 && windowWidth < 1024) {
             $("article.feat_items_list").eq(2).show();
             $("article.feat_items_list").eq(3).hide();
@@ -80,6 +94,25 @@ $(document).ready(function () {
             $("article.feat_items_list").eq(0).children("div.items_price").text(feat_items_img[list1].items_price);
             $("article.feat_items_list").eq(1).children("div.items_price").text(feat_items_img[list2].items_price);
             $("article.feat_items_list").eq(2).children("div.items_price").text(feat_items_img[list3].items_price);
+
+            $("article.hotitems_list").eq(2).show();
+            $("article.hotitems_list").eq(3).hide();
+
+            $("article.hotitems_list").eq(0).children("img").attr("src", feat_items_img[list1].items_img);
+            $("article.hotitems_list").eq(1).children("img").attr("src", feat_items_img[list2].items_img);
+            $("article.hotitems_list").eq(2).children("img").attr("src", feat_items_img[list3].items_img);
+
+            $("article.hotitems_list").eq(0).children("div.items_name").text(feat_items_img[list1].items_name);
+            $("article.hotitems_list").eq(1).children("div.items_name").text(feat_items_img[list2].items_name);
+            $("article.hotitems_list").eq(2).children("div.items_name").text(feat_items_img[list3].items_name);
+
+            $("article.hotitems_list").eq(0).children("div.items_cook").text(feat_items_img[list1].items_cook);
+            $("article.hotitems_list").eq(1).children("div.items_cook").text(feat_items_img[list2].items_cook);
+            $("article.hotitems_list").eq(2).children("div.items_cook").text(feat_items_img[list3].items_cook);
+
+            $("article.hotitems_list").eq(0).children("div.items_price").text(feat_items_img[list1].items_price);
+            $("article.hotitems_list").eq(1).children("div.items_price").text(feat_items_img[list2].items_price);
+            $("article.hotitems_list").eq(2).children("div.items_price").text(feat_items_img[list3].items_price);
 
         } else {
             $("article.feat_items_list").eq(3).show();
@@ -103,6 +136,28 @@ $(document).ready(function () {
             $("article.feat_items_list").eq(1).children("div.items_price").text(feat_items_img[list2].items_price);
             $("article.feat_items_list").eq(2).children("div.items_price").text(feat_items_img[list3].items_price);
             $("article.feat_items_list").eq(3).children("div.items_price").text(feat_items_img[list4].items_price);
+
+            $("article.hotitems_list").eq(3).show();
+
+            $("article.hotitems_list").eq(0).children("img").attr("src", feat_items_img[list1].items_img);
+            $("article.hotitems_list").eq(1).children("img").attr("src", feat_items_img[list2].items_img);
+            $("article.hotitems_list").eq(2).children("img").attr("src", feat_items_img[list3].items_img);
+            $("article.hotitems_list").eq(3).children("img").attr("src", feat_items_img[list4].items_img);
+
+            $("article.hotitems_list").eq(0).children("div.items_name").text(feat_items_img[list1].items_name);
+            $("article.hotitems_list").eq(1).children("div.items_name").text(feat_items_img[list2].items_name);
+            $("article.hotitems_list").eq(2).children("div.items_name").text(feat_items_img[list3].items_name);
+            $("article.hotitems_list").eq(3).children("div.items_name").text(feat_items_img[list4].items_name);
+
+            $("article.hotitems_list").eq(0).children("div.items_cook").text(feat_items_img[list1].items_cook);
+            $("article.hotitems_list").eq(1).children("div.items_cook").text(feat_items_img[list2].items_cook);
+            $("article.hotitems_list").eq(2).children("div.items_cook").text(feat_items_img[list3].items_cook);
+            $("article.hotitems_list").eq(3).children("div.items_cook").text(feat_items_img[list4].items_cook);
+
+            $("article.hotitems_list").eq(0).children("div.items_price").text(feat_items_img[list1].items_price);
+            $("article.hotitems_list").eq(1).children("div.items_price").text(feat_items_img[list2].items_price);
+            $("article.hotitems_list").eq(2).children("div.items_price").text(feat_items_img[list3].items_price);
+            $("article.hotitems_list").eq(3).children("div.items_price").text(feat_items_img[list4].items_price);
         }
     };
 
