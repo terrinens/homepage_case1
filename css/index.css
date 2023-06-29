@@ -499,6 +499,8 @@ main section#hotitems article {
     border: 1px solid gray;
 
     box-shadow: 1px 1px 10px;
+
+    position: relative;
 }
 
 
@@ -587,6 +589,30 @@ main section#hotitems button {
     height: 100%;
 }
 
+main section#hotitems div.items_quick_hotitems {
+    position: absolute;
+    top: 0;
+
+    background-color: rgba(220, 220, 220, 0.5);
+
+    min-height: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+main section#hotitems div.items_quick_hotitems img {
+    width: 30%;
+    height: 30%;
+}
+
+main section#hotitems div.items_quick_hotitems img:hover {
+    border: 1px dotted red;
+}
 /* 인기 아이템 끝 */
 
 /* 메인 끝 */

@@ -360,5 +360,32 @@ $(document).ready(function () {
         $("div#side_menu_icon_box").toggle();
     });
     // side mneu 버튼 끝
+    // 
+    // 
+    // 
+    // article feat_items_list, hotitems_list 이미지 호버시 장바구니 버튼 구현
+    $("div.items_quick").css("display", "none");
 
+    $("img.items_img").each(function (index) {
+        $(this).mouseenter(function () {
+            $("div.items_quick").eq(index).css("display", "flex");
+        });
+
+        $("div.items_quick").mouseleave(function () {
+            $("div.items_quick").eq(index).css("display", "none");
+        });
+    });
+
+    $("div.items_quick_hotitems").css("display", "none");
+
+    $("img.items_img_hotitems").each(function (index) {
+        $(this).mouseenter(function () {
+            $("div.items_quick_hotitems").eq(index).css("display", "flex");
+        });
+
+        $("div.items_quick_hotitems").mouseleave(function () {
+            $("div.items_quick_hotitems").eq(index).css("display", "none");
+        });
+    });
+    // article feat_items_list, hotitems_list 이미지 호버시 장바구니 버튼 구현 끝
 });
