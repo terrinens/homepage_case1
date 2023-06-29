@@ -163,7 +163,7 @@ $(document).ready(function () {
     // 
     // 
     // 
-    // feat_items_list 버튼 추가 시작 
+    // feat_items_list 버튼 시작 
     // next 버튼 버그 있으니 수정할것.
     var next_index = 0;
     $("button#next").click(function () {
@@ -264,11 +264,11 @@ $(document).ready(function () {
         var list_link = feat_items_img[index].items_link;
         window.location.href = list_link;
     });
-    // feat_items_list 버튼추가 끝
+    // feat_items_list 버튼 끝
     // 
     // 
     // 
-    // hotitems_list 버튼추가 시작
+    // hotitems_list 버튼 시작
     $("button#hot_next").click(function () {
 
         if (windowWidth <= 783) {
@@ -352,5 +352,13 @@ $(document).ready(function () {
         window.location.href = list_link;
     });
     // hotitems_list 버튼추가 끝
+    // 
+    // 
+    // 
+    // side menu 버튼 시작
+    $("button#side_menu_toggle").click(function () {
+        $("div#side_menu_icon_box").toggle();
+    });
+    // side mneu 버튼 끝
 
 });
