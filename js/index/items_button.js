@@ -42,7 +42,7 @@ $(document).ready(function () {
         },
     ];
 
-    // 이부분을 frontend 발표때 넣을것
+    // 이부분을 발표때 넣을것
     // 반응형을 대응한 창 갯수 조절
     function articleRESP() {
         if (windowWidth <= 783) {
@@ -193,4 +193,6 @@ $(document).ready(function () {
         window.location.href = list_link;
     });
 });
+
+
 
