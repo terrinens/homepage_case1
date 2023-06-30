@@ -298,11 +298,18 @@ main section#event_banner_box {
     z-index: 1;
 }
 
-main section#event_banner_box img#banner_img {
+main section#event_banner_box img#banner_img, img#banner_img2 {
     height: 100%;
     width: 100%;
     max-width: 1200px;
+    position: absolute;
+
+    display: block;
 }
+
+/* main section#event_banner_box img#banner_img2 {
+    display: none;
+} */
 
 @media screen and (max-width : 1024px) {
     main section#event_banner_box img {

@@ -359,8 +359,8 @@ $(document).ready(function () {
     $("button#side_menu_toggle").click(function () {
         $("div#side_menu_icon_box").toggle();
     });
-    // side mneu 버튼 끝
-    // 
+    // side menu 버튼 끝
+    //
     // 
     // 
     // article feat_items_list, hotitems_list 이미지 호버시 장바구니 버튼 구현
