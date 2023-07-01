@@ -49,9 +49,10 @@ $(document).ready(function () {
     ];
 
     function articleRESP() {
-        if (windowWidth <= 783) {
+        if (windowWidth >= 1 && windowWidth <= 783) {
 
             $("article.feat_items_list").eq(2).hide();
+            $("article.feat_items_list").eq(3).hide();
 
             $("article.feat_items_list").each(function (index) {
                 $("article.feat_items_list").eq(index).children("img").attr("src", feat_items_img[index].items_img);
@@ -113,9 +114,10 @@ $(document).ready(function () {
     };
 
     function articleRESP2() {
-        if (windowWidth <= 783) {
+        if ( windowWidth >= 1 && windowWidth <= 783 ) {
 
             $("article.hotitems_list").eq(2).hide();
+            $("article.hotitems_list").eq(3).hide();
 
             $("article.hotitems_list").each(function (index) {
                 $("article.hotitems_list").eq(index).children("img").attr("src", feat_items_img[index].items_img);
