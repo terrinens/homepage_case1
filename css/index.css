@@ -160,11 +160,14 @@ header nav#side_menu button#side_menu_toggle {
     }
 }
 
-header nav#side_menu button#side_menu_toggle div {
-    margin-bottom: 5px;
-    width: 30%;
+header nav#side_menu button#side_menu_toggle img {
+    width: 500px;
+    height: 20px;
+    font-weight: bolder;
+}
 
-    border: 2px solid gray;
+header nav#side_menu button#side_menu_toggle img:hover {
+    border: 1px dotted red;
 }
 
 header nav#side_menu div#side_menu_icon_box {
@@ -302,14 +305,17 @@ main section#event_banner_box img#banner_img, img#banner_img2 {
     height: 100%;
     width: 100%;
     max-width: 1200px;
-    position: absolute;
 
     display: block;
+    position: relative;
+    left: 0px;
 }
 
-/* main section#event_banner_box img#banner_img2 {
+
+main section#event_banner_box img#banner_img2 {
     display: none;
-} */
+    width: 0%;
+}
 
 @media screen and (max-width : 1024px) {
     main section#event_banner_box img {

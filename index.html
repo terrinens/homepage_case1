@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지</title>
     <script src="./js/jquery-3.7.0.min.js"></script>
-    <script src="https://kit.fontawesome.com/6ec8356f28.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -41,7 +40,7 @@
         <!-- 현재 일정 크기 이하일시 아이콘들이 사라지니 터치 스크롤 구현 예정 -->
         <nav class="c12 c_m_12" id="side_menu">
             <button id="side_menu_toggle">
-                <div></div>
+                <img src="./img/svg/arrows-expand.svg" alt="사이드 메뉴">
             </button>
             <div class="c12 c_m_12" id="side_menu_icon_box">
                 <ul>
@@ -148,16 +147,13 @@
 
     <main class="c12 c_m_12">
         <!-- 메인 배너 -->
-        <!-- 배너 슬라이드 구현 예정 -->
         <section class="c12 c_m_12" id="event_banner_box">
             <img src="" id="banner_img">
             <img src="" id="banner_img2">
-            <script src="js/index/event_banner_silde.js"></script>
         </section>
         <!-- 추천상품 -->
         <div class="c12 feat_info">추천 상품</div>
         <section class="c12" id="feat_items">
-            <!-- a 태그로 article 안에 요소를 감싸니 박스들이 작동되지 않았다. -->
             <button id="frev"> < </button>
                     <article class="feat_items_list">
                         <img src="" alt="" class="items_img">
