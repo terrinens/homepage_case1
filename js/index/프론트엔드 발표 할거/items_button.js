@@ -42,8 +42,6 @@ $(document).ready(function () {
         },
     ];
 
-    // 이부분을 발표때 넣을것
-    // 반응형을 대응한 창 갯수 조절
     function articleRESP() {
         if (windowWidth <= 783) {
 

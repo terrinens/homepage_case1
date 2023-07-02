@@ -365,7 +365,7 @@ $(document).ready(function () {
     //
     // 
     // 
-    // article feat_items_list, hotitems_list 이미지 호버시 장바구니 버튼 구현
+    // article feat_items_list, hotitems_list 이미지 호버시 장바구니 버튼 구현 시작
     $("div.items_quick").css("display", "none");
 
     $("img.items_img").each(function (index) {
